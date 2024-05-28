@@ -21,7 +21,6 @@ const Footer = () => {
                 href="https://vk.com/rinatkp"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mr-5"
               >
                 <img class="w-10 h-10" src="/img/Group.svg" alt="" />
               </a>
