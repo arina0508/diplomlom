@@ -18,7 +18,7 @@ const Footer = () => {
             <h4 class="text-lg font-semibold mb-3">Мы в соцсетях</h4>
             <div class="flex items-center">
               <a
-                href="https://t.me/+AplToMAWwFQ5MjMy"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mr-5"
