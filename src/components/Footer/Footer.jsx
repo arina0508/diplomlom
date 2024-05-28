@@ -18,7 +18,7 @@ const Footer = () => {
             <h4 class="text-lg font-semibold mb-3">Мы в соцсетях</h4>
             <div class="flex items-center">
               <a
-                href="https://t.me/+AplToMAWwFQ5MjMy"
+                href="https://vk.com/rinatkp"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mr-5"
@@ -26,7 +26,7 @@ const Footer = () => {
                 <img class="w-10 h-10" src="/img/Group.svg" alt="" />
               </a>
               <a
-                href="https://t.me/+AplToMAWwFQ5MjMy"
+                href="https://vk.com/rinatkp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
