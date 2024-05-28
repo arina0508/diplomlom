@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Repetitors } from "./pages/Repetitors";
 import { HowTheServiceWorks } from "./pages/HowTheServiceWorks";
 import { Support } from "./pages/Support";
+import { Profile } from "./pages/Profile";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
       <Route path="/rep" element={<Repetitors />} />
       <Route path="/service" element={<HowTheServiceWorks />} />
       <Route path="/support" element={<Support />} />
+      <Route path="/profile" element={<Profile />} />
     </Routes>
   );
 }
