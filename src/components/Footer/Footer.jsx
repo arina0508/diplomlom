@@ -15,9 +15,10 @@ const Footer = () => {
             <p class="text-center">Политика конфиденциальности</p>
           </div>
           <div class="mb-6">
-            <h4 class="text-lg font-semibold mb-3">Мы в соцсетях</h4>
-            <div class="flex items-center">
+            <h4 class="text-lg font-semibold mb-3 ">Мы в соцсетях</h4>
+            <div class="flex items-center ">
               <a
+                className="mr-5"
                 href="https://vk.com/rinatkp"
                 target="_blank"
                 rel="noopener noreferrer"
