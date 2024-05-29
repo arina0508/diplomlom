@@ -8,7 +8,7 @@ const Footer = () => {
             <p>Телефон: +7 (123) 456-7890</p>
             <p>Email: info@example.com</p>
           </div>
-          <div class="mr-8 mt-8">
+          <div class="mr-8 mt-5">
             <p class="text-center">Правила сервиса</p>
           </div>
           <div class="mr-8 mt-5">
