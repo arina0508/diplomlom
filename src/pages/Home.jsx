@@ -23,14 +23,16 @@ export const Home = () => {
 
         <div className="flex justify-end items-center">
           <Header />
-          <Button
-            className="w-[180px] rounded-md"
-            variant="outlined"
-            color="inherit"
-            style={{ textTransform: "none", borderRadius: "20px" }}
-          >
-            Личный кабинет
-          </Button>
+          <Link to="/profile" className="w-[140px] rounded-md ml-8">
+            <Button
+              className="w-[180px] rounded-md"
+              variant="outlined"
+              color="inherit"
+              style={{ textTransform: "none", borderRadius: "20px" }}
+            >
+              Личный кабинет
+            </Button>
+          </Link>
         </div>
       </div>
       {/* меню */}
