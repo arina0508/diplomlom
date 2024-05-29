@@ -5,7 +5,6 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-
 import { CardActionArea } from "@mui/material";
 import Footer from "../components/Footer/Footer";
 
@@ -13,14 +12,12 @@ export const Home = () => {
   return (
     <div className=" ">
       {/* хэдер */}
-
       <div className="w-full grid grid-cols-3 items-center p-5 ">
         <div></div>
         <div className="mt-5">
           <h1 className="text-6xl">Easy</h1>
           <h1 className="text-6xl">Education</h1>
         </div>
-
         <div className="flex justify-end items-center">
           <Header />
           <Link to="/profile">
@@ -67,7 +64,6 @@ export const Home = () => {
             </CardActionArea>
           </Card>
         </Link>
-
         <Link to="/rep">
           <Card sx={{ maxWidth: 410 }}>
             <CardActionArea>
@@ -85,7 +81,6 @@ export const Home = () => {
             </CardActionArea>
           </Card>
         </Link>
-
         <Link to="/rep">
           <Card sx={{ maxWidth: 410 }}>
             <CardActionArea>
@@ -108,56 +103,54 @@ export const Home = () => {
         СТРЕМИМСЯ К ЗАНИЯМ!
       </h2>
       {/* как подбираем репетиторов */}
-      <div className="pt-20 px-20 pb-20">
-        <div className="bg-cover bg-center h-[800px] bg-[url(/img/Frame1.png)]">
-          <div className=" pl-10 pt-24">
-            <div class="max-w-4xl mx-auto ">
-              <p className=" py-14 text-center text-4xl ">
+      <div className="pt-20 px-20 pb-20 flex justify-center">
+        <div className="bg-cover bg-center h-[800px] w-[1200px] bg-[url(/img/Frame1.png)]">
+          <div className="pl-10 pt-24">
+            <div className="max-w-4xl mx-auto">
+              <p className="py-14 text-center text-4xl">
                 Как мы подбираем репетиторов?
               </p>
-
               <div className="pt-6">
-                <div class="grid-cols-2 justify-start flex space-x-10 pb-10">
-                  <img class="w-20 h-20" src="/img/Group 1.png" alt="" />
+                <div className="grid-cols-2 justify-start flex space-x-10 pb-10">
+                  <img className="w-20 h-20" src="/img/Group 1.png" alt="" />
                   <div>
-                    <h3 class="text-2xl font-semibold mb-2">ОБРАЗОВАНИЕ</h3>
-                    <p class="text-gray-600">
+                    <h3 className="text-2xl font-semibold mb-2">ОБРАЗОВАНИЕ</h3>
+                    <p className="text-gray-600">
                       Наша команда тщательно проверяет каждого репетитора,
                       уделяя особое внимание их квалификации и специализации.
                     </p>
                   </div>
                 </div>
-
-                <div class="grid-cols-2 justify-start flex space-x-10 pb-10">
-                  <img class="w-20 h-20" src="/img/Group 1.png" alt="" />
+                <div className="grid-cols-2 justify-start flex space-x-10 pb-10">
+                  <img className="w-20 h-20" src="/img/Group 1.png" alt="" />
                   <div>
-                    <h3 class="text-2xl font-semibold mb-2">ЛИЧНЫЕ КАЧЕСТВА</h3>
-                    <p class="text-gray-600">
+                    <h3 className="text-2xl font-semibold mb-2">
+                      ЛИЧНЫЕ КАЧЕСТВА
+                    </h3>
+                    <p className="text-gray-600">
                       Мы обращаем внимание на личные качества репетитора, такие
                       как терпимость, коммуникабельность и понимание
                       потребностей ученика.
                     </p>
                   </div>
                 </div>
-
-                <div class="grid-cols-2 justify-start flex space-x-10 pb-10">
-                  <img class="w-20 h-20" src="/img/Group 1.png" alt="" />
+                <div className="grid-cols-2 justify-start flex space-x-10 pb-10">
+                  <img className="w-20 h-20" src="/img/Group 1.png" alt="" />
                   <div>
-                    <h3 class="text-2xl font-semibold mb-2">
+                    <h3 className="text-2xl font-semibold mb-2">
                       ГИБКОСТЬ В РАСПИСАНИИ
                     </h3>
-                    <p class="text-gray-600">
+                    <p className="text-gray-600">
                       Наши репетиторы готовы адаптировать свое расписание под
                       ваши потребности.
                     </p>
                   </div>
                 </div>
-
-                <div class="grid-cols-2 justify-start flex space-x-10 pb-10">
-                  <img class="w-20 h-20" src="/img/Group 1.png" alt="" />
+                <div className="grid-cols-2 justify-start flex space-x-10 pb-10">
+                  <img className="w-20 h-20" src="/img/Group 1.png" alt="" />
                   <div>
-                    <h3 class="text-2xl font-semibold mb-2">РЕЗУЛЬТАТЫ</h3>
-                    <p class="text-gray-600">
+                    <h3 className="text-2xl font-semibold mb-2">РЕЗУЛЬТАТЫ</h3>
+                    <p className="text-gray-600">
                       Счастливые улыбки и уверенность в своих знаниях - это то,
                       что мы стремимся достичь вместе с вами.
                     </p>
