@@ -85,8 +85,9 @@ export function Profile() {
               Назад
             </Button>
           </Link>
-          <h3 className="text-5xl">Личный кабинет</h3>
+          <h1 className="text-5xl">Личный кабинет</h1>
           <a
+            className="flex justify-end items-center"
             href="https://vk.com/rinatkp"
             target="_blank"
             rel="noopener noreferrer"
@@ -98,8 +99,8 @@ export function Profile() {
             />
           </a>
         </header>
-        <div className="w-full grid grid-cols-2 items-center p-5 mt-14">
-          <div className="ml-28">
+        <div className="w-full grid grid-cols-10 items-center p-5 mt-14">
+          <div className="col-span-3 ml-28">
             <img src="/img/student.jpg" width="219" height="275" alt="" />
             <div className="mt-3 text-xl">
               <p>Волкова Мария</p>
@@ -166,7 +167,7 @@ export function Profile() {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="col-span-7">
             {showChart && (
               <div style={{ width: "800px", height: "600px" }}>
                 <Bar data={data} options={options} width={800} height={600} />

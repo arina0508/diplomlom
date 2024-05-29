@@ -5,7 +5,6 @@ import Footer from "../components/Footer/Footer";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-
 import { CardActionArea, CardActions } from "@mui/material";
 
 export function Repetitors() {
@@ -34,9 +33,9 @@ export function Repetitors() {
           поиск
         </Button>
       </div>
-      <body className=" grid grid-cols-6 items-center mt-10">
+      <div className="grid grid-cols-6 items-center mt-10">
         <div></div>
-        <Card sx={{ maxWidth: 250, minHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -59,7 +58,7 @@ export function Repetitors() {
             </Button>
           </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 250, maxHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -82,7 +81,7 @@ export function Repetitors() {
             </Button>
           </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 250, maxHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -105,7 +104,7 @@ export function Repetitors() {
             </Button>
           </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 250, minHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -129,10 +128,10 @@ export function Repetitors() {
           </CardActions>
         </Card>
         <div></div>
-      </body>
-      <body className=" grid grid-cols-6 items-center mt-10 pb-10">
+      </div>
+      <div className="grid grid-cols-6 items-center mt-10 pb-10">
         <div></div>
-        <Card sx={{ maxWidth: 250, minHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -155,7 +154,7 @@ export function Repetitors() {
             </Button>
           </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 250, maxHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -172,8 +171,13 @@ export function Repetitors() {
               </Typography>
             </CardContent>
           </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Записаться
+            </Button>
+          </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 250, maxHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -190,8 +194,13 @@ export function Repetitors() {
               </Typography>
             </CardContent>
           </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Записаться
+            </Button>
+          </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 250, minHeight: 450 }}>
+        <Card sx={{ width: 250, height: 500 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -208,9 +217,14 @@ export function Repetitors() {
               </Typography>
             </CardContent>
           </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Записаться
+            </Button>
+          </CardActions>
         </Card>
         <div></div>
-      </body>
+      </div>
       <Footer />
     </div>
   );

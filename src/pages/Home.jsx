@@ -99,7 +99,7 @@ export const Home = () => {
           </Card>
         </Link>
       </div>
-      <h2 className="w-full items-center pt-28 text-6xl">
+      <h2 className="w-full items-center pt-24 text-6xl">
         СТРЕМИМСЯ К ЗАНИЯМ!
       </h2>
       {/* как подбираем репетиторов */}
