@@ -1,18 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Typography, Paper } from "@mui/material";
+import { Button } from "@mui/material";
 import Footer from "../components/Footer/Footer";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { Eventcalendar, momentTimezone } from "@mobiscroll/react";
+import "@mobiscroll/react/dist/css/mobiscroll.min.css";
+import moment from "moment-timezone";
+
+// Register Chart.js components
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+// Setup Mobiscroll Moment plugin
+momentTimezone.moment = moment;
 
 export function Profile() {
+  const [showChart, setShowChart] = useState(false);
+  const [showCalendar, setShowCalendar] = useState(false);
+
   const data = {
-    labels: [1, 2, 3, 4],
+    labels: [
+      "Занятие 1",
+      "Занятие 2",
+      "Занятие 3",
+      "Занятие 4",
+      "Занятие 5",
+      "Занятие 6",
+      "Занятие 7",
+    ],
     datasets: [
       {
-        label: "aaaa",
-        data: [34, 49, 90, 4],
-        backgroundColor: ["rgba(255, 99, 132, 0.2)"],
-        borderColor: ["rgba(255, 99, 132, 1)"],
+        label: "Успеваемость",
+        data: [7, 9, 10, 6, 8, 10, 9],
+        backgroundColor: ["rgba(219, 169, 111, 1)"],
+        borderColor: ["rgba(219, 169, 111, 1)"],
         borderWidth: 1,
       },
     ],
@@ -24,6 +60,16 @@ export function Profile() {
         beginAtZero: true,
       },
     },
+  };
+
+  const handleShowChart = () => {
+    setShowChart(true);
+    setShowCalendar(false);
+  };
+
+  const handleShowCalendar = () => {
+    setShowChart(false);
+    setShowCalendar(true);
   };
 
   return (
@@ -59,36 +105,34 @@ export function Profile() {
               <p>Волкова Мария</p>
             </div>
             <div className="mt-7">
-              <Link to="/" className="w-[240px]">
-                <Button
-                  variant="outlined"
-                  color="inherit"
-                  size="medium"
-                  style={{
-                    textTransform: "none",
-                    borderRadius: "20px",
-                    width: "219px",
-                  }}
-                >
-                  расписание
-                </Button>
-              </Link>
+              <Button
+                variant="outlined"
+                color="inherit"
+                size="medium"
+                style={{
+                  textTransform: "none",
+                  borderRadius: "20px",
+                  width: "219px",
+                }}
+                onClick={handleShowCalendar}
+              >
+                расписание
+              </Button>
             </div>
             <div className="mt-7">
-              <Link to="/" className="">
-                <Button
-                  variant="outlined"
-                  color="inherit"
-                  size="medium"
-                  style={{
-                    textTransform: "none",
-                    borderRadius: "20px",
-                    width: "219px",
-                  }}
-                >
-                  успеваемость
-                </Button>
-              </Link>
+              <Button
+                variant="outlined"
+                color="inherit"
+                size="medium"
+                style={{
+                  textTransform: "none",
+                  borderRadius: "20px",
+                  width: "219px",
+                }}
+                onClick={handleShowChart}
+              >
+                успеваемость
+              </Button>
             </div>
             <div className="mt-7">
               <Link to="/" className="w-[140px]">
@@ -123,7 +167,35 @@ export function Profile() {
             </div>
           </div>
           <div>
-            <Bar data={data} options={options} />
+            {showChart && (
+              <div style={{ width: "800px", height: "600px" }}>
+                <Bar data={data} options={options} width={800} height={600} />
+              </div>
+            )}
+            {showCalendar && (
+              <Eventcalendar
+                data={[
+                  {
+                    start: new Date(),
+                    title: "Today's event",
+                  },
+                  {
+                    start: new Date(2020, 11, 18, 9, 0),
+                    end: new Date(2020, 11, 20, 13, 0),
+                    title: "Multi day event",
+                  },
+                ]}
+                dataTimezone="utc"
+                displayTimezone="local"
+                timezonePlugin={momentTimezone}
+                view={{
+                  calendar: {
+                    type: "month",
+                    popover: true,
+                  },
+                }}
+              />
+            )}
           </div>
         </div>
       </div>
