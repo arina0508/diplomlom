@@ -23,7 +23,7 @@ export const Home = () => {
 
         <div className="flex justify-end items-center">
           <Header />
-          <Link to="/profile" className="w-[140px] rounded-md ml-8">
+          <Link to="/profile">
             <Button
               className="w-[180px] rounded-md"
               variant="outlined"
