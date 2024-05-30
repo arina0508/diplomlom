@@ -5,7 +5,6 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export function Support() {
   return (
@@ -31,7 +30,24 @@ export function Support() {
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography>Accordion 1</Typography>
+            <Typography>Как вы подбираете репетиторов?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Наша команда тщательно проверяет каждого репетитора, уделяя особое
+              внимание их квалификации и специализации. Мы обращаем внимание на
+              личные качества репетитора, такие как терпимость,
+              коммуникабельность и понимание потребностей ученика.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDownwardIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            <Typography>вопрос 2</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -47,7 +63,7 @@ export function Support() {
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography>Accordion 1</Typography>
+            <Typography>вопрос 3</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -63,23 +79,7 @@ export function Support() {
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography>Accordion 1</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ArrowDownwardIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            <Typography>Accordion 1</Typography>
+            <Typography>вопрос 4</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -90,18 +90,16 @@ export function Support() {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className="w-full h-screen flex flex-col justify-center items-center">
-        <div>
-          <p className="text-center mb-4">Не нашли ответ на свой вопрос?</p>
-          <Button
-            className="w-[180px] rounded-md"
-            variant="contained"
-            color="success"
-            style={{ textTransform: "none", borderRadius: "20px" }}
-          >
-            Задать вопрос
-          </Button>
-        </div>
+      <div className="flex flex-col items-center mt-10">
+        <p className="text-center mb-4">Не нашли ответ на свой вопрос?</p>
+        <Button
+          className="w-[180px] justify-center items-center"
+          variant="contained"
+          color="success"
+          style={{ textTransform: "none", borderRadius: "20px" }}
+        >
+          Задать вопрос
+        </Button>
       </div>
     </div>
   );
