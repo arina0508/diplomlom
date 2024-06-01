@@ -16,7 +16,6 @@ import { Eventcalendar, momentTimezone } from "@mobiscroll/react";
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 import moment from "moment-timezone";
 
-// Register Chart.js components
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -26,7 +25,6 @@ ChartJS.register(
   Legend
 );
 
-// Setup Mobiscroll Moment plugin
 momentTimezone.moment = moment;
 
 export function Profile() {
@@ -34,19 +32,11 @@ export function Profile() {
   const [showCalendar, setShowCalendar] = useState(false);
 
   const data = {
-    labels: [
-      "Занятие 1",
-      "Занятие 2",
-      "Занятие 3",
-      "Занятие 4",
-      "Занятие 5",
-      "Занятие 6",
-      "Занятие 7",
-    ],
+    labels: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь"],
     datasets: [
       {
         label: "Успеваемость",
-        data: [7, 9, 10, 6, 8, 10, 9],
+        data: [7, 9, 10, 6, 8, 10],
         backgroundColor: ["rgba(219, 169, 111, 1)"],
         borderColor: ["rgba(219, 169, 111, 1)"],
         borderWidth: 1,
