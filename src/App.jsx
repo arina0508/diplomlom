@@ -6,9 +6,6 @@ import { Repetitors } from "./pages/Repetitors";
 import { HowTheServiceWorks } from "./pages/HowTheServiceWorks";
 import { Support } from "./pages/Support";
 import { Profile } from "./pages/Profile";
-import { AuthProvider } from "../server/AuthContext";
-import { AuthProvider } from "../server/Login";
-import { AuthProvider } from "../server/Register";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,8 +19,6 @@ function App() {
           <Route path="/service" element={<HowTheServiceWorks />} />
           <Route path="/support" element={<Support />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
         </Switch>
       </AuthProvider>
     </Router>
