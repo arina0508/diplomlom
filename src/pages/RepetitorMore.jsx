@@ -13,7 +13,7 @@ export const RepetitorMore = () => {
   return (
     <div>
       <div className="w-full grid grid-cols-3 items-center p-5 mt-14">
-        <Link to="/" className="w-[140px] rounded-md ml-8">
+        <Link to="/rep" className="w-[140px] rounded-md ml-8">
           <button
             variant="text"
             color="inherit"
@@ -28,7 +28,7 @@ export const RepetitorMore = () => {
       <div className="p-5">
         <div className="flex justify-center">
           <img
-            className="w-full h-[340px]"
+            className="w-[240px] h-[340px]"
             src={repetitor.img}
             alt={`${repetitor.firstName} ${repetitor.lastName}`}
           />

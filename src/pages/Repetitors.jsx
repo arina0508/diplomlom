@@ -70,7 +70,7 @@ export function Repetitors() {
       </div>
       <div className="flex flex-wrap justify-around gap-5 mt-5">
         {repetitors.map((repetitor, i) => (
-          <Link to={`/repmore/${i}`} key={i}>
+          <Link to={`/repmore/${repetitor.id}`} key={i}>
             <Card>
               <CardActionArea>
                 <img

@@ -1,10 +1,15 @@
+import woman1 from './img/woman1.jpg';
+import woman2 from './img/woman2.jpg';
+import woman3 from './img/woman3.jpg';
+import woman4 from './img/woman4.jpg';
+
 export const repetitors = [
   {
     id: 0,
     firstName: "Ольга",
     lastName: "Васина",
     subject: "Английский язык",
-    img: "./img/woman1.jpg",
+    img: woman1,
     examE: true,
     examO: false,
   },
@@ -13,7 +18,7 @@ export const repetitors = [
     firstName: "Анна",
     lastName: "Волкова",
     subject: "Русский язык",
-    img: "./img/woman2.jpg",
+    img: woman2,
     examE: false,
     examO: true,
   },
@@ -22,7 +27,7 @@ export const repetitors = [
     firstName: "Василиса",
     lastName: "Петрова",
     subject: "Математика",
-    img: "./img/woman3.jpg",
+    img: woman3,
     examE: false,
     examO: true,
   },
@@ -31,17 +36,8 @@ export const repetitors = [
     firstName: "Елена",
     lastName: "Любина",
     subject: "Химия",
-    img: "./img/woman4.jpg",
+    img: woman4,
     examE: true,
     examO: true,
-  },
-  {
-    id: 4,
-    firstName: "Елена",
-    lastName: "Любина",
-    subject: "Химия",
-    img: "./img/woman4.jpg",
-    examE: false,
-    examO: false,
   },
 ];
