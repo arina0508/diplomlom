@@ -43,7 +43,10 @@ export const Home = () => {
         <Link to="/support" className="text-xl hover:underline">
           поддержка{" "}
         </Link>
-        <Link className="text-xl">стать репетитором</Link>
+
+        <Link to="/berep" className="text-xl hover:underline">
+          стать репетитором{" "}
+        </Link>
       </div>
       {/* карточки */}
       <div className="text-xl flex w-full items-center justify-center gap-16 pt-16">

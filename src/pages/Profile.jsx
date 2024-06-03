@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
-import Footer from "../components/Footer/Footer";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -35,7 +34,7 @@ export function Profile() {
     labels: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь"],
     datasets: [
       {
-        label: "Успеваемость",
+        label: "Посещаемость",
         data: [7, 9, 10, 6, 8, 10],
         backgroundColor: ["rgba(219, 169, 111, 1)"],
         borderColor: ["rgba(219, 169, 111, 1)"],
@@ -122,7 +121,7 @@ export function Profile() {
                 }}
                 onClick={handleShowChart}
               >
-                успеваемость
+                посещаемость
               </Button>
             </div>
             <div className="mt-7">

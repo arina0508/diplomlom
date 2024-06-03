@@ -47,13 +47,13 @@ export function Support() {
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography>вопрос 2</Typography>
+            <Typography>Что делать, если репетитор не подошел?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              Для этого вам нужно в личном кабинете в расписании нажать на
+              занятие и отменить его, заполнив анкету с указанием причины
+              отказа.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -63,29 +63,13 @@ export function Support() {
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography>вопрос 3</Typography>
+            <Typography>Я хочу стать репетитором. Что делать?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ArrowDownwardIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            <Typography>вопрос 4</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              Откройте страницу "Стать репетитором". Ознакомтесь с информацией и
+              заполните анкету. После успешного анкетирования с вами свяжется
+              отдел кадров.
             </Typography>
           </AccordionDetails>
         </Accordion>
