@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import { Button, Typography } from "@mui/material";
 import { repetitors } from "../data";
 
 export const RepetitorMore = () => {
@@ -22,26 +23,51 @@ export const RepetitorMore = () => {
             Назад
           </button>
         </Link>
-        <h1 className="text-5xl">Описание репетитора</h1>
+        <h1 className="text-6xl pb-12">Описание репетитора</h1>
         <div></div>
       </div>
-      <div className="p-5">
-        <div className="flex justify-center">
+      <div className="grid grid-cols-2 p-5">
+        <div className="flex flex-col items-center">
           <img
-            className="w-[240px] h-[340px]"
+            className="w-[380px] h-[540px]"
             src={repetitor.img}
             alt={`${repetitor.firstName} ${repetitor.lastName}`}
           />
+
+          <div className="text-center text-xl mt-6 ">
+            <p>
+              {repetitor.firstName} {repetitor.lastName}
+            </p>
+            <div className=" my-6">
+              <Button
+                className="w-[180px] justify-center items-center"
+                variant="contained"
+                color="success"
+                style={{ textTransform: "none", borderRadius: "20px" }}
+              >
+                Записаться
+              </Button>
+            </div>
+          </div>
         </div>
-        <div className="mt-5 text-center">
-          <h2>
-            {repetitor.firstName} {repetitor.lastName}
-          </h2>
-          <p>{repetitor.subject}</p>
-          {repetitor.examE && <p>Подготовка к ЕГЭ</p>}
-          {repetitor.examO && <p>Подготовка к ОГЭ</p>}
+        <div>
+          <p className=" text-xl leading-relaxed pr-64">
+            {repetitor.description}
+          </p>
+          <div className=" mt-10">
+            <p className=" text-xl leading-relaxed pr-64">
+              {repetitor.education}
+            </p>
+            <p className=" text-xl leading-relaxed pr-64">
+              {repetitor.qualification}
+            </p>
+            <p className=" text-xl leading-relaxed pr-64">
+              Стаж -{repetitor.workExperience}
+            </p>
+          </div>
         </div>
       </div>
+      <div className="flex flex-col items-center mt-10"></div>
     </div>
   );
 };
