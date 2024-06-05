@@ -8,6 +8,8 @@ import { Support } from "./pages/Support";
 import { Profile } from "./pages/Profile";
 import { BeRepetitor } from "./pages/BeRepetitor";
 import { RepetitorMore } from "./pages/RepetitorMore";
+import { EditProfile } from "./pages/EditProfile";
+import { Auth } from "./pages/Auth";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,12 +17,13 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route exact path="/rep" element={<Repetitors />} />
+      <Route path="/rep" element={<Repetitors />} />
       <Route path="/service" element={<HowTheServiceWorks />} />
       <Route path="/support" element={<Support />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/berep" element={<BeRepetitor />} />
-      <Route path="/" element={<Repetitors />} />
+      <Route path="/editprof" element={<EditProfile />} />
+      <Route path="/auth" element={<Auth />} />
       <Route path="/repmore/:repetitorId" element={<RepetitorMore />} />
     </Routes>
   );

@@ -20,7 +20,7 @@ export const Home = () => {
         </div>
         <div className="flex justify-end items-center">
           <Header />
-          <Link to="/profile">
+          <Link to="/auth">
             <Button
               className="w-[180px] rounded-md"
               variant="outlined"

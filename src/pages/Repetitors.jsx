@@ -20,7 +20,7 @@ export function Repetitors() {
   const [examE, setExamE] = useState(true);
   const [examO, setExamO] = useState(true);
 
-  const filteredData = repetitors.filter((repetitor) => {
+  const filteredData = filteredRep.filter((repetitor) => {
     const searchTextLower = searchTerm.toLowerCase();
     const hasExamEorO =
       (examE && repetitor.examE) || (examO && repetitor.examO);
@@ -69,7 +69,7 @@ export function Repetitors() {
         />
       </div>
       <div className="flex flex-wrap justify-around gap-5 mt-5">
-        {repetitors.map((repetitor, i) => (
+        {filteredData.map((repetitor, i) => (
           <Link to={`/repmore/${repetitor.id}`} key={i}>
             <Card>
               <CardActionArea>
